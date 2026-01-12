@@ -61,7 +61,7 @@ export function Navbar() {
             );
           })}
           <ThemeToggle />
-          <Button asChild size="sm" className="hidden lg:inline-flex">
+          <Button asChild size="sm" className="hidden lg:inline-flex hover:bg-[#25B050] hover:text-white">
             <Link href="/contact">Få uforpliktende tilbud</Link>
           </Button>
         </nav>
@@ -91,7 +91,7 @@ export function Navbar() {
                   ))}
                 </nav>
                 <SheetClose asChild>
-                  <Button className="mt-4 w-full" size="sm" asChild>
+                  <Button className="mt-4 w-full hover:bg-[#25B050] hover:text-white" size="sm" asChild>
                     <Link href="/contact">Få tilbud</Link>
                   </Button>
                 </SheetClose>

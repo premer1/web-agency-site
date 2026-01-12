@@ -28,7 +28,7 @@ export function Hero() {
             {/* <Button asChild size="lg">
               <Link href="/portfolio">Se eksempler</Link>
             </Button> */}
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="outline" className="hover:bg-[#25B050] hover:text-white hover:border-[#25B050]">
               <Link href="/contact">Få uforpliktende tilbud</Link>
             </Button>
             <p className="text-xs text-slate-500 dark:text-slate-200">
