@@ -29,7 +29,7 @@ export function CTASection() {
           </p>
         </div>
         <div className="flex flex-col items-start gap-3">
-          <Button asChild size="lg" variant="subtle">
+          <Button asChild size="lg" variant="subtle" className="hover:bg-[#25B050] hover:text-white">
             <Link href="/contact">Få uforpliktende tilbud</Link>
           </Button>
           <p className="text-xs text-slate-300">

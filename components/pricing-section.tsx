@@ -118,7 +118,7 @@ export function PricingSection() {
       </div>
       <div className="mt-6 flex justify-center">
         <div className="inline-flex w-full max-w-xl flex-col items-start gap-2 rounded-md border border-slate-100 bg-card/90 p-3 text-xs text-slate-700 shadow-soft dark:border-slate-800 dark:bg-[#202126] dark:text-slate-200 md:flex-row md:items-center md:justify-between">
-          <Button asChild size="sm" className="w-full md:w-auto">
+          <Button asChild size="sm" className="w-full md:w-auto hover:bg-[#25B050] hover:text-white">
             <Link href="/contact">Få uforpliktende tilbud</Link>
           </Button>
           <p className="text-[11px] text-slate-600 dark:text-slate-200 md:text-[11px]">
