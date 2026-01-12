@@ -16,7 +16,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const links = [
   { href: "/" as const, label: "Hjem" },
   // { href: "/eksempler" as const, label: "Eksempler" },
-  { href: { pathname: "/", hash: "pricing" } as const, label: "Priser" },
+  { href: "/#pricing" as const, label: "Priser" },
   { href: "/faq" as const, label: "FAQ" },
   { href: "/contact" as const, label: "Kontakt" }
 ] as const;
@@ -41,10 +41,7 @@ export function Navbar() {
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
           {links.map((link) => {
-            const hrefPath =
-              typeof link.href === "string"
-                ? link.href.replace(/#.*$/, "")
-                : link.href.pathname;
+            const hrefPath = link.href.replace(/#.*$/, "");
             const active =
               hrefPath === "/"
                 ? pathname === "/"
