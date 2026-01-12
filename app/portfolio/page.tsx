@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import { PortfolioGrid } from "@/components/portfolio-grid";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Eksempler – Kigent",
   description:
     "Se et utvalg av prosjekter og løsninger Kigent kan levere."

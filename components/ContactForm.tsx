@@ -14,15 +14,17 @@ const contactSchema = z
   .object({
     name: z.string().min(2, "Navn må være minst 2 tegn."),
     email: z
-      .string()
-      .email("Skriv inn en gyldig e‑postadresse.")
-      .optional()
-      .or(z.literal("")),
+      .union([
+        z.string().email("Skriv inn en gyldig e‑postadresse."),
+        z.literal("")
+      ])
+      .optional(),
     phone: z
-      .string()
-      .min(4, "Telefonnummer må være minst 4 tegn.")
-      .optional()
-      .or(z.literal("")),
+      .union([
+        z.string().min(4, "Telefonnummer må være minst 4 tegn."),
+        z.literal("")
+      ])
+      .optional(),
     message: z.string().min(10, "Meldingen må være minst 10 tegn.")
   })
   .refine(
